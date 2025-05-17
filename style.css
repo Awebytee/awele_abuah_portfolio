@@ -209,8 +209,10 @@ nav a.active::after {
 }
 
 .profile-text h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
+    font-weight: 800;
+    text-align: center;
     color: #e91e63;
 }
 
@@ -219,6 +221,20 @@ nav a.active::after {
     line-height: 1.8;
     margin-bottom: 1.5rem;
     color: #333;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.profile-text h1::after {
+    content: '✨';
+    color: #e91e63;
+    animation: twinkle 1s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.5; transform: scale(1); }
+    to { opacity:1; transform: scale(1.2); }
 }
 
 .gallery-section {
